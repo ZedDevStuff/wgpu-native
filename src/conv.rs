@@ -397,7 +397,7 @@ pub(crate) unsafe fn map_device_descriptor<'a>(
             // TODO(wgpu.h)
             memory_hints: Default::default(),
             trace: Default::default(),
-            experimental_features: wgt::ExperimentalFeatures::disabled(),
+            experimental_features: wgt::ExperimentalFeatures::enabled(),
         },
         match des.uncapturedErrorCallbackInfo.callback {
             None => None,
